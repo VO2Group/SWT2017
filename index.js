@@ -28,7 +28,7 @@ const app = express()
 
 app.get('/', ({ session: { instanceUrl, accessToken } }, res) => {
   if (instanceUrl && accessToken) {
-    res.sendFile(path.join(__dirname, 'index.html'))
+    res.sendFile(path.join(__dirname, 'app.html'))
   } else {
     res.redirect(oauth2.getAuthorizationUrl({ scope: 'api' }))
   }
