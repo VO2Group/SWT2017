@@ -37,6 +37,7 @@ const app = express()
   app.get('/callback', ({ query: { code }, session }, res) => {
     const conn = new jsforce.Connection({ oauth2 })
     conn.authorize(code, (err, user) => {
+      
       if (err) { return console.error(err) }
       session.instanceUrl = conn.instanceUrl
       session.accessToken = conn.accessToken
