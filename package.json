@@ -1,26 +1,21 @@
 {
-  "name": "swt2017",
+  "name": "contacts",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VO2Group/SWT2017.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VO2Group/SWT2017/issues"
-  },
-  "homepage": "https://github.com/VO2Group/SWT2017#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.17.1",
+    "browser-sync": "^2.18.12",
     "cors": "^2.8.3",
-    "express": "^4.15.3",
-    "express-session": "^1.15.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
     "jsforce": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
